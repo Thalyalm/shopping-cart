@@ -8,12 +8,7 @@ body {
   background-color: #f6f6f6;
   font-family: "Lato", sans-serif;
 }
-
-button {
-  cursor: pointer;
-}
-
-header {
+body > header {
   background: #111;
   color: #fff;
   font-size: 24px;
@@ -21,28 +16,31 @@ header {
   display: flex;
   justify-content: center;
 }
-header span {
+body > header span {
   text-transform: uppercase;
 }
-
-main {
+body > main {
   background: #fff;
-  padding: 0 30px;
+  padding: 0 30px 30px;
 }
-main .page-title {
+body > main .page-title {
   font-size: 40px;
   padding: 50px 0;
   text-align: center;
 }
-main .content {
+body > main .content {
   display: flex;
 }
-main section {
+body > main section {
   flex: 1;
 }
-main aside {
-  background: red;
+body > main aside {
   min-width: 250px;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
 }
 
 table {
@@ -56,7 +54,7 @@ table thead tr th {
   text-align: left;
   padding-bottom: 10px;
   text-transform: uppercase;
-  color: #666;
+  color: #555;
 }
 table tbody tr {
   border-bottom: 3px solid #eee;
@@ -82,24 +80,38 @@ table tbody tr td {
   font-size: 20px;
 }
 .product .info .category {
-  color: #666;
+  color: #555;
 }
 
 .qty {
-  background: #ccc;
+  background: #eee;
   display: inline-flex;
-  padding: 5px 0;
+  padding: 0 0;
   justify-content: space-around;
   min-width: 60px;
   align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 30px;
+}
+.qty span {
+  margin: 0 10px;
 }
 .qty button {
+  display: flex;
+  align-items: center;
   background: transparent;
   border: 0;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 100%;
+}
+.qty button:hover {
+  background: #ddd;
 }
 
 .remove {
-  background: #ccc;
+  background: #eee;
   border: 0;
   width: 38px;
   height: 38px;
@@ -108,5 +120,65 @@ table tbody tr td {
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  cursor: pointer;
+}
+.remove:hover {
+  background: #ddd;
+}
+
+aside {
+  margin-left: 30px;
+}
+aside .box {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  background: #eee;
+}
+aside .box header {
+  padding: 15px 20px;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+}
+aside .box .info {
+  padding: 20px;
+  font-size: 16px;
+  color: #333;
+}
+aside .box .info > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1px solid #ccc;
+  color: #555;
+  margin-bottom: 16px;
+}
+aside .box .info > div:last-child {
+  margin: 0;
+}
+aside .box .info button {
+  color: green;
+  background: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+aside .box footer {
+  padding: 15px 20px;
+  font-size: 18px;
+  background: #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+aside > button {
+  border: 0;
+  padding: 15px 0;
+  color: white;
+  background: green;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+aside > button:hover {
+  background: rgb(0, 90, 0);
 }/*# sourceMappingURL=styles.css.map */
