@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +10,10 @@
 </head>
 <body>
     <header>
-        <span>Carinho de Compras</span>
+        <span>Carrinho de compras</span>
     </header>
     <main>
-        <div class="page-title">Seu Carrinho</div>
+        <div class="page-title">Carrinho</div>
         <div class="content">
             <section>
                 <table>
@@ -27,19 +27,29 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <td></td>
-                        <td>R$ 120</td>
-                        <td>
-                            <div class="qty">
-                                <button>-</button>
-                                <span></span>
-                                <button>+</button>
-                            </div>
-                        </td>
-                        <td>R$ 240</td>
-                        <td>
-                            <button><i class='bx bx-x'></i></button>
-                        </td>
+                        <tr>
+                            <td>
+                                <div class="product">
+                                    <img src="https://picsum.photos/100/120" alt="">
+                                    <div class="info">
+                                        <div class="name">Nome do produto</div>
+                                        <div class="category">Categoria</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>R$ 120</td>
+                            <td>
+                                <div class="qty">
+                                    <button><i class='bx bx-minus'></i></button>
+                                    <span>2</span>
+                                    <button><i class='bx bx-plus'></i></button>
+                                </div>
+                            </td>
+                            <td>R$ 240</td>
+                            <td>
+                                <buttonc class="remove"><i class='bx bx-x'></i></button>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </section>
